@@ -1,0 +1,24 @@
+.content {
+  background: #f9f8f8 url(../img/L1_09_3_2_172/bg.png) no-repeat center / 100%;
+}
+.answer_wrap .input {
+  left: 1505px;
+  min-width: 160px;
+  min-height: 160px;
+  border-radius: 50px;
+}
+.answer_wrap .input.a1 {
+  top: 79px;
+}
+.answer_wrap .input.a2 {
+  top: 312px;
+}
+
+.answer_wrap .input.a3 {
+  top: 545px;
+}
+.answer_wrap .input > span {
+  font-size: 88px;
+  position: relative;
+  bottom: -8px;
+}

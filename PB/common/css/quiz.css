@@ -1,0 +1,365 @@
+/* 클릭하기 */
+[data-name="click"] .item {
+  position: relative;
+}
+[data-name="click"] .item img.off,
+[data-name="click"] .item img.on {
+  display: block;
+}
+
+[data-name="click"] .item img.on {
+  display: none;
+}
+[data-name="click"] .item.on img.off {
+  display: none;
+}
+
+[data-name="click"] .item.on img.on {
+  display: block;
+}
+[data-name="click"] .answer_wrap.num,
+[data-name="click"] .answer_wrap.is_btn {
+  position: absolute;
+  top: 638px;
+  left: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-name="click"] .answer_wrap.col {
+  flex-direction: column;
+}
+[data-name="click"] .answer_wrap.num .item + .item,
+[data-name="click"] .answer_wrap.is_btn .item + .item {
+  margin-left: 40px;
+}
+[data-name="click"] .answer_wrap.col .item + .item {
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+[data-name="click"] .answer_wrap.num .item {
+  width: 176px;
+  height: 180px;
+  background: url(../img/btn/num/1.png) no-repeat center;
+}
+[data-name="click"] .answer_wrap.num .item.a2 {
+  background-image: url(../img/btn/num/2.png);
+}
+[data-name="click"] .answer_wrap.num .item.a3 {
+  background-image: url(../img/btn/num/3.png);
+}
+[data-name="click"] .answer_wrap.num .item.a4 {
+  background-image: url(../img/btn/num/4.png);
+}
+[data-name="click"] .answer_wrap.num .item.a5 {
+  background-image: url(../img/btn/num/5.png);
+}
+[data-name="click"] .answer_wrap.num .item.a6 {
+  background-image: url(../img/btn/num/6.png);
+}
+[data-name="click"] .answer_wrap.num .item.a7 {
+  background-image: url(../img/btn/num/7.png);
+}
+[data-name="click"] .answer_wrap.num .item.a8 {
+  background-image: url(../img/btn/num/8.png);
+}
+[data-name="click"] .answer_wrap.num .item.a9 {
+  background-image: url(../img/btn/num/9.png);
+}
+
+[data-name="click"] .answer_wrap.num .item.on {
+  background-image: url(../img/btn/num/1_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a2 {
+  background-image: url(../img/btn/num/2_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a3 {
+  background-image: url(../img/btn/num/3_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a4 {
+  background-image: url(../img/btn/num/4_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a5 {
+  background-image: url(../img/btn/num/5_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a6 {
+  background-image: url(../img/btn/num/6_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a7 {
+  background-image: url(../img/btn/num/7_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a8 {
+  background-image: url(../img/btn/num/8_o.png);
+}
+[data-name="click"] .answer_wrap.num .item.on.a9 {
+  background-image: url(../img/btn/num/9_o.png);
+}
+/* 드래그 */
+.drag .drag_item,
+.drag .drop_item {
+  display: inline-block;
+}
+.drag .drag_item .on {
+  display: none;
+}
+.drag .drag_item.ui-draggable-dragging .on,
+.drag .drag_item.drop .on {
+  display: block;
+}
+.drag .drag_item.ui-draggable-dragging .off,
+.drag .drag_item.drop .off {
+  display: none;
+}
+
+/* 키패드 입력 */
+
+.keyboard {
+  background: #2d5064;
+  position: absolute;
+  width: 100%;
+  height: 212px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keyboard > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keyboard > ul > li {
+  height: 164px;
+  text-indent: -9999px;
+}
+.keyboard > ul > li + li {
+  margin-left: 8px;
+}
+
+.keyboard .key_num li {
+  width: 136px;
+  background: url(../img/btn/keyboard/off/0.png) no-repeat center / 100%;
+}
+.keyboard .key_num li:nth-child(2) {
+  background-image: url(../img/btn/keyboard/off/1.png);
+}
+.keyboard .key_num li:nth-child(3) {
+  background-image: url(../img/btn/keyboard/off/2.png);
+}
+
+.keyboard .key_num li:nth-child(4) {
+  background-image: url(../img/btn/keyboard/off/3.png);
+}
+.keyboard .key_num li:nth-child(5) {
+  background-image: url(../img/btn/keyboard/off/4.png);
+}
+.keyboard .key_num li:nth-child(6) {
+  background-image: url(../img/btn/keyboard/off/5.png);
+}
+.keyboard .key_num li:nth-child(7) {
+  background-image: url(../img/btn/keyboard/off/6.png);
+}
+.keyboard .key_num li:nth-child(8) {
+  background-image: url(../img/btn/keyboard/off/7.png);
+}
+.keyboard .key_num li:nth-child(9) {
+  background-image: url(../img/btn/keyboard/off/8.png);
+}
+.keyboard .key_num li:nth-child(10) {
+  background-image: url(../img/btn/keyboard/off/9.png);
+}
+
+/* active */
+.keyboard .key_num li:nth-child(1):active {
+  background-image: url(../img/btn/keyboard/on/0.png);
+}
+.keyboard .key_num li:nth-child(2):active {
+  background-image: url(../img/btn/keyboard/on/1.png);
+}
+.keyboard .key_num li:nth-child(3):active {
+  background-image: url(../img/btn/keyboard/on/2.png);
+}
+
+.keyboard .key_num li:nth-child(4):active {
+  background-image: url(../img/btn/keyboard/on/3.png);
+}
+.keyboard .key_num li:nth-child(5):active {
+  background-image: url(../img/btn/keyboard/on/4.png);
+}
+.keyboard .key_num li:nth-child(6):active {
+  background-image: url(../img/btn/keyboard/on/5.png);
+}
+.keyboard .key_num li:nth-child(7):active {
+  background-image: url(../img/btn/keyboard/on/6.png);
+}
+.keyboard .key_num li:nth-child(8):active {
+  background-image: url(../img/btn/keyboard/on/7.png);
+}
+.keyboard .key_num li:nth-child(9):active {
+  background-image: url(../img/btn/keyboard/on/8.png);
+}
+.keyboard .key_num li:nth-child(10):active {
+  background-image: url(../img/btn/keyboard/on/9.png);
+}
+/* active End */
+
+.keyboard .key_tool {
+  position: relative;
+  margin-left: 38px;
+}
+.keyboard .key_tool::before {
+  content: "";
+  width: 2px;
+  height: 110px;
+  background-color: rgb(29, 57, 73);
+  position: absolute;
+  top: 50%;
+  left: -19px;
+  transform: translateY(-50%);
+}
+.keyboard .key_tool li {
+  width: 184px;
+  background: url(../img/btn/keyboard/btn_delete.png) no-repeat center / 100%;
+}
+.keyboard .key_tool .btn_check {
+  background: url(../img/btn/keyboard/btn_confirm_key.png) no-repeat center / 100%;
+}
+
+.answer_wrap .input {
+  font-size: 110px;
+  font-family: "Jalnan";
+  width: 200px;
+  height: 200px;
+  border: 8px solid #45494c;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 490px;
+  left: 1541px;
+}
+.answer_wrap .input.unit {
+  width: 335px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 36px 36px 0;
+}
+.answer_wrap .input.md {
+  height: 180px;
+}
+.answer_wrap .input.sm {
+  height: 160px;
+  border-radius: 50px;
+}
+
+.answer_wrap .input.keyup {
+  border-color: #da1c32;
+}
+.answer_wrap .input > span {
+  font-size: 110px;
+  color: rgb(48, 48, 48);
+  font-family: "Jalnan";
+  position: relative;
+  top: 10px;
+}
+.answer_wrap .input.md > span {
+  font-size: 100px;
+}
+.answer_wrap .input.sm > span {
+  font-size: 88px;
+  top: 8px;
+}
+.answer_wrap .input.unit em {
+  font-style: normal;
+  font-size: 80px;
+  font-family: "NanumSquareRoundEB";
+  color: #303030;
+  margin-left: 10px;
+}
+
+/* 선잇기 공통 */
+.quiz_area.line .line_wrap {
+  position: absolute;
+  display: inline-block;
+}
+
+.quiz_area.line .dot_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.quiz_area.line .dot {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.quiz_area.line .dot .drag {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.quiz_area.line .dot .drop {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+[data-name="singleLine"] .drop,
+[data-name="twoWayLineCnt"] .drop {
+  display: none;
+}
+[data-name="singleLine"] .dot_list.start_left .dot.right .drop,
+[data-name="twoWayLineCnt"] .dot_list.start_left .dot.right .drop {
+  display: block;
+}
+[data-name="singleLine"] .dot_list.start_left .dot.right .drag,
+[data-name="twoWayLineCnt"] .dot_list.start_left .dot.right .drag {
+  display: none;
+}
+[data-name="singleLine"] .dot_list.start_right .dot.left .drop,
+[data-name="twoWayLineCnt"] .dot_list.start_right .dot.left .drop {
+  display: block;
+}
+[data-name="singleLine"] .dot_list.start_right .dot.left .drag,
+[data-name="twoWayLineCnt"] .dot_list.start_right .dot.left .drag {
+  display: none;
+}
+.quiz_area.line svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.quiz_area.line svg line {
+  stroke: #d808ae;
+  stroke-linecap: round;
+  stroke-width: 10px;
+  display: none;
+}
+
+.quiz_area.line svg line.on {
+  display: block;
+}
+
+[data-name="twoWayLineMulti"] .dot_list.on .drag:not(.ui-draggable-dragging) {
+  display: none;
+}
+[data-name="twoWayLineMulti"] .dot_list.on .ui-draggable-dragging + .drop {
+  display: none;
+}

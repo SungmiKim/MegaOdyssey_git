@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Jalnan";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/JalnanOTF.woff) format("woff");
+}
+
+@font-face {
+  font-family: "NanumSquareRoundL";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NanumSquareRoundL.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRoundR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumSquareRoundR.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRoundB";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumSquareRoundB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRoundEB";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/NanumSquareRoundEB.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSansKR-Bold.woff) format("woff");
+}

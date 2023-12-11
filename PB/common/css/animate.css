@@ -1,0 +1,261 @@
+@keyframes bigAndSmall {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bigAndSmall1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bigAndSmall2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoom_in_out {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-webkit-keyframes completeStamp {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scratchGuide {
+  0% {
+    top: 55%;
+    left: 45%;
+  }
+  50% {
+    top: 45%;
+    left: 55%;
+  }
+  100% {
+    top: 55%;
+    left: 45%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.999;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes vibration {
+  from {
+    transform: rotate(1deg);
+  }
+  to {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes vibration2 {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes card_scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes card_scale1 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes card_scale2 {
+  0% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  25% {
+    transform: translate(-50%, 0%) scale(1.01);
+  }
+  50% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  75% {
+    transform: translate(-50%, 0%) scale(1.01);
+  }
+  100% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+}
+@keyframes card_scale3 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes card_scale4 {
+  0% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  25% {
+    transform: translate(-50%, 0%) scale(1.04);
+  }
+  50% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  75% {
+    transform: translate(-50%, 0%) scale(1.04);
+  }
+  100% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+}
+@keyframes card_scale5 {
+  0% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  25% {
+    transform: translate(-50%, 0%) scale(1.1);
+  }
+  50% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  75% {
+    transform: translate(-50%, 0%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, 0%) scale(1);
+  }
+}
+
+@keyframes card_scale6 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.content {
+  background: #f6effd url(../img/L1_06_3_2_112/bg.png) no-repeat center / 100%;
+}
+.quiz_area.line svg line {
+  stroke: #da1c32;
+  stroke-width: 14px;
+}
+.dot.d1 {
+  top: 338px;
+  left: 1385px;
+}
+.dot.d2 {
+  top: 198px;
+  left: 1522px;
+}
+.dot.d3 {
+  top: 754px;
+  left: 1385px;
+}
+.dot.d4 {
+  top: 614px;
+  left: 1522px;
+}

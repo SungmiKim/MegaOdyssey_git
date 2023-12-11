@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="038">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">리사는 흰색 점을 가지고 있는 회색 주사위 2개와 검은색 점을 가지고 있는 흰색 주사위 3개를 가지고 있습니다. <br />5개 중 2개는 작고 나머지는 큽니다. 다음 중 리사의 주사위는 무엇일까요? 알맞은 번호를 눌러 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="click">
+            <div class="answer_wrap">
+              <div class="item a1">
+                <img src="./img/L2_038/1.png" class="off" />
+                <img src="./img/L2_038/1_o.png" class="on" />
+              </div>
+              <div class="item a2">
+                <img src="./img/L2_038/2.png" class="off" />
+                <img src="./img/L2_038/2_o.png" class="on" />
+              </div>
+              <div class="item a3 correct">
+                <img src="./img/L2_038/3.png" class="off" />
+                <img src="./img/L2_038/3_o.png" class="on" />
+              </div>
+              <div class="item a4">
+                <img src="./img/L2_038/4.png" class="off" />
+                <img src="./img/L2_038/4_o.png" class="on" />
+              </div>
+              <div class="item a5">
+                <img src="./img/L2_038/5.png" class="off" />
+                <img src="./img/L2_038/5_o.png" class="on" />
+              </div>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

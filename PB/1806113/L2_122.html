@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="122">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">일정한 규칙에 따라 수를 나열하고 있습니다. 빈칸에 들어갈 수는 얼마일까요? 알맞은 수를 입력해 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="keypad">
+            <div class="answer_wrap" data-answer="84">
+              <!-- input -->
+              <div class="input keyup"><span></span></div>
+
+              <!-- 키패드 -->
+              <div class="keyboard">
+                <ul class="key_num">
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                </ul>
+                <ul class="key_tool">
+                  <li class="delete">지우기</li>
+                  <li class="btn_check">정답확인</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="056">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">각 숫자에 맞는 탤리 마크를 찾아 선으로 이어 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area line" data-name="singleLine">
+            <div class="answer_wrap" data-answer="1,8//2,5//3,7//4,6">
+              <div class="draw_area">
+                <div class="line_wrap">
+                  <svg></svg>
+                  <div class="dot_list">
+                    <div class="dot d1 left" data-answer="1"><span class="drag"></span><span class="drop"></span></div>
+                    <div class="dot d2 left" data-answer="2"><span class="drag"></span><span class="drop"></span></div>
+                    <div class="dot d3 left" data-answer="3"><span class="drag"></span><span class="drop"></span></div>
+                    <div class="dot d4 left" data-answer="4"><span class="drag"></span><span class="drop"></span></div>
+
+                    <div class="dot d5 right" data-answer="5"><span class="drag"></span><span class="drop"></span></div>
+                    <div class="dot d6 right" data-answer="6"><span class="drag"></span><span class="drop"></span></div>
+                    <div class="dot d7 right" data-answer="7"><span class="drag"></span><span class="drop"></span></div>
+                    <div class="dot d8 right" data-answer="8"><span class="drag"></span><span class="drop"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

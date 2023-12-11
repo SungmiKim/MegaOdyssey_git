@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="038">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">
+              어떤 수를 앞에서부터 읽은 것과 뒤에서부터 읽은 것이 같은 수를 "대칭수"라고 합니다. 예를 들어 11, 121은 대칭수입니다. <br />
+              다음 중 대칭수를 모두 눌러 주세요.
+            </div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="click">
+            <div class="answer_wrap multi" data-answer="2//12//9//8//6//7">
+              <ul>
+                <li>
+                  <div class="item a1">
+                    <img src="./img/L3_038/12.png" class="off" />
+                    <img src="./img/L3_038/12_o.png" class="on" />
+                  </div>
+                  <div class="item a2">
+                    <img src="./img/L3_038/22.png" class="off" />
+                    <img src="./img/L3_038/22_o.png" class="on" />
+                  </div>
+                  <div class="item a3">
+                    <img src="./img/L3_038/918.png" class="off" />
+                    <img src="./img/L3_038/918_o.png" class="on" />
+                  </div>
+                  <div class="item a4">
+                    <img src="./img/L3_038/83.png" class="off" />
+                    <img src="./img/L3_038/83_o.png" class="on" />
+                  </div>
+                  <div class="item a5">
+                    <img src="./img/L3_038/120.png" class="off" />
+                    <img src="./img/L3_038/120_o.png" class="on" />
+                  </div>
+                  <div class="item a6">
+                    <img src="./img/L3_038/1001.png" class="off" />
+                    <img src="./img/L3_038/1001_o.png" class="on" />
+                  </div>
+                </li>
+                <li>
+                  <div class="item a7">
+                    <img src="./img/L3_038/12521.png" class="off" />
+                    <img src="./img/L3_038/12521_o.png" class="on" />
+                  </div>
+                  <div class="item a8">
+                    <img src="./img/L3_038/505.png" class="off" />
+                    <img src="./img/L3_038/505_o.png" class="on" />
+                  </div>
+                  <div class="item a9">
+                    <img src="./img/L3_038/131.png" class="off" />
+                    <img src="./img/L3_038/131_o.png" class="on" />
+                  </div>
+                  <div class="item a10">
+                    <img src="./img/L3_038/37.png" class="off" />
+                    <img src="./img/L3_038/37_o.png" class="on" />
+                  </div>
+                </li>
+                <li>
+                  <div class="item a11">
+                    <img src="./img/L3_038/2727.png" class="off" />
+                    <img src="./img/L3_038/2727_o.png" class="on" />
+                  </div>
+                  <div class="item a12">
+                    <img src="./img/L3_038/55.png" class="off" />
+                    <img src="./img/L3_038/55_o.png" class="on" />
+                  </div>
+                  <div class="item a13">
+                    <img src="./img/L3_038/69.png" class="off" />
+                    <img src="./img/L3_038/69_o.png" class="on" />
+                  </div>
+                  <div class="item a14">
+                    <img src="./img/L3_038/3161.png" class="off" />
+                    <img src="./img/L3_038/3161_o.png" class="on" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

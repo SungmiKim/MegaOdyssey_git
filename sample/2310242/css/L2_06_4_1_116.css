@@ -1,0 +1,37 @@
+.content {
+  background: #f2fce3 url(../img/L2_06_4_1_116/bg.png) no-repeat center / 100%;
+}
+
+.quiz_area.line svg line {
+  stroke: #4fb3d3;
+  stroke-width: 14px;
+}
+.quiz_area.line svg line.line3 {
+  stroke: #ff902d;
+}
+
+.dot {
+  top: 168px;
+  left: 398px;
+}
+
+.dot.d2 {
+  top: 280px;
+  left: 285px;
+}
+.dot.d3 {
+  top: 528px;
+  left: 761px;
+}
+.dot.d4 {
+  top: 642px;
+  left: 647px;
+}
+.dot.d5 {
+  top: 170px;
+  left: 1414px;
+}
+.dot.d6 {
+  top: 642px;
+  left: 1156px;
+}

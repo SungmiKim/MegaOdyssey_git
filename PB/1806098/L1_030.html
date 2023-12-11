@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="030">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">할머니가 18개의 머핀을 구워서 상자에 담으셨습니다. 할머니는 머핀 1개를 드셨고, 나는 할머니의 두 배를 먹었고, 오빠는 나의 <br />두 배를 먹었습니다. 상자에 남아 있는 머핀은 몇 개일까요? 알맞은 수를 입력해 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="keypad">
+            <div class="answer_wrap" data-answer="11">
+              <div class="input unit keyup"><span></span><em>개</em></div>
+
+              <!-- 키패드 -->
+              <div class="keyboard">
+                <ul class="key_num">
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                </ul>
+                <ul class="key_tool">
+                  <li class="delete">지우기</li>
+                  <li class="btn_check">정답확인</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

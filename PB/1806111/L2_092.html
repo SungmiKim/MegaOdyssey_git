@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="092">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">선을 기준으로 대칭이 되도록 색을 마저 칠하려 합니다. 빈 칸에 알맞은 색의 색연필을 끌어놓아 색칠해 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area drag">
+            <div class="answer_wrap" data-answer="2134">
+              <div class="drag_wrap">
+                <div class="item_wrap d1">
+                  <div class="drag_item" data-answer="1"></div>
+                </div>
+                <div class="item_wrap d2">
+                  <div class="drag_item" data-answer="2"></div>
+                </div>
+                <div class="item_wrap d3">
+                  <div class="drag_item" data-answer="3"></div>
+                </div>
+                <div class="item_wrap d4">
+                  <div class="drag_item" data-answer="4"></div>
+                </div>
+
+                <div class="drop_wrap">
+                  <div class="drop_item d1"></div>
+                  <div class="drop_item d2"></div>
+                  <div class="drop_item d3"></div>
+                  <div class="drop_item d4"></div>
+                </div>
+              </div>
+              <img src="./img/L2_092/line.png" class="line" />
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+          <div class="cursor"></div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      const cursor = $(".cursor");
+
+      var startTop;
+      var startLeft;
+      var itemWidth = $(".drag_item").innerWidth();
+      var itemHeight = $(".drag_item").innerHeight();
+      var click = {
+        x: 0,
+        y: 0,
+      };
+
+      $(".drag_item").on("dragstart", (e) => {});
+      $(".drag_item").draggable({});
+
+      //드래그
+      $(".drag_item").draggable({
+        revert: true,
+        revertDuration: 0,
+        stack: ".drag_item",
+        helper: "clone",
+        start: function (e) {
+          $(this).removeClass("drop");
+          var idx = $(this).attr("data-answer");
+          $(`.drop_item[data-answer='${idx}']`).removeClass("drop");
+
+          var idx = $(this).parents(".item_wrap").index() + 1;
+          cursor.attr("n", idx).show();
+          cursor.css({
+            top: `${event.clientY - 90}px`,
+            left: `${event.clientX - 30}px`,
+          });
+          startTop = e.offsetY;
+          startLeft = e.offsetX;
+        },
+        drag: function (e, ui) {
+          cursor.show();
+          cursor.css({
+            top: `${e.clientY - 90}px`,
+            left: `${e.clientX - 30}px`,
+          });
+
+          var _x = event.clientX;
+          var _rulerLeft = $(this).parents(".item_wrap").offset().left;
+          ui.position.top = ui.position.top + startTop - itemHeight / 2;
+          ui.position.left = ui.position.left + startLeft - itemWidth / 2;
+        },
+        stop: function () {
+          cursor.hide();
+        },
+      });
+
+      //드롭
+      $(".drop_item").droppable({
+        drop: function (e, ui) {
+          var dataAns = ui.draggable.attr("data-answer");
+          $(this).attr("data-answer", dataAns);
+
+          dropAudio.play();
+          ui.draggable.animate({ top: 0, left: 0 }, 0);
+        },
+      });
+
+      // 정답 확인
+      $(".btn_confirm").click(function () {
+        var ansWrap = $(this).parents(".quiz_area").find(".answer_wrap");
+        var ansData = ansWrap.attr("data-answer");
+        var dropList = ansWrap.find(".drop_item");
+        var dropAns = "";
+        for (let i = 0; i < dropList.length; i++) {
+          dropAns += dropList[i].getAttribute("data-answer");
+        }
+        if (ansData == dropAns) {
+          Quiz.correctQuiz();
+        } else {
+          Quiz.incorrectQuiz();
+        }
+      });
+    </script>
+  </body>
+</html>

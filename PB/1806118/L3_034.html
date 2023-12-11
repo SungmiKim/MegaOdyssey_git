@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="034">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">아래 덧셈식에서 알파벳 X, Y, Z는 1부터 9까지의 수 중에서 서로 다른 수를 의미합니다. 알파벳 X가 될 수 있는 수를 모두 눌러 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="click">
+            <div class="answer_wrap multi is_btn" data-answer="4//6//8//9">
+              <div class="item a1">
+                <img src="./img/L3_034/1.png" class="off" />
+                <img src="./img/L3_034/1_o.png" class="on" />
+              </div>
+              <div class="item a2">
+                <img src="./img/L3_034/2.png" class="off" />
+                <img src="./img/L3_034/2_o.png" class="on" />
+              </div>
+              <div class="item a3">
+                <img src="./img/L3_034/3.png" class="off" />
+                <img src="./img/L3_034/3_o.png" class="on" />
+              </div>
+              <div class="item a4">
+                <img src="./img/L3_034/4.png" class="off" />
+                <img src="./img/L3_034/4_o.png" class="on" />
+              </div>
+              <div class="item a5">
+                <img src="./img/L3_034/5.png" class="off" />
+                <img src="./img/L3_034/5_o.png" class="on" />
+              </div>
+              <div class="item a6">
+                <img src="./img/L3_034/6.png" class="off" />
+                <img src="./img/L3_034/6_o.png" class="on" />
+              </div>
+              <div class="item a7">
+                <img src="./img/L3_034/7.png" class="off" />
+                <img src="./img/L3_034/7_o.png" class="on" />
+              </div>
+              <div class="item a8">
+                <img src="./img/L3_034/8.png" class="off" />
+                <img src="./img/L3_034/8_o.png" class="on" />
+              </div>
+              <div class="item a9">
+                <img src="./img/L3_034/9.png" class="off" />
+                <img src="./img/L3_034/9_o.png" class="on" />
+              </div>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

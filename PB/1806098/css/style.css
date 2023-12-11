@@ -1,0 +1,318 @@
+/* 21 */
+[page-num="021"] .content {
+  background: #ebf7ff url(../img/L1_021/bg.png) no-repeat center / 100%;
+}
+[page-num="021"] .input {
+  top: 496px;
+  left: 852px;
+}
+[page-num="021"] .input.a2 {
+  left: 1373px;
+}
+/* 22 */
+[page-num="022"] .content {
+  background: #f9f8f8 url(../img/L1_022/bg.png) no-repeat center / 100%;
+}
+/* 23 */
+[page-num="023"] .content {
+  background: #f6effd url(../img/L1_023/bg.png) no-repeat center / 100%;
+}
+[page-num="023"] .input {
+  top: 272px;
+  left: 984px;
+}
+[page-num="023"] .input.a2 {
+  top: 502px;
+  left: 1305px;
+}
+/* 24 */
+[page-num="024"] .content {
+  background: url(../img/L1_024/bg.png) no-repeat center / 100%;
+}
+[page-num="024"] .input {
+  top: 445px;
+}
+[page-num="024"] .input > span {
+  top: 15px;
+}
+/* 25 */
+[page-num="025"] .content {
+  background: url(../img/L1_025/bg.png) no-repeat center / 100%;
+}
+[page-num="025"] .input {
+  top: 445px;
+}
+/* 26 */
+[page-num="026"] .content {
+  background: #ffeded url(../img/L1_026/bg.png) no-repeat center / 100%;
+}
+[page-num="026"] .input {
+  top: 432px;
+  left: 585px;
+}
+[page-num="026"] .input.a2 {
+  top: 177px;
+  left: 1337px;
+}
+[page-num="026"] .input.a3 {
+  top: 407px;
+  left: 1656px;
+}
+
+/* 27 */
+[page-num="027"] .content {
+  background: #ebf7ff url(../img/L1_027/bg.png) no-repeat center / 100%;
+}
+[page-num="027"] .input {
+  top: 432px;
+  left: 585px;
+}
+[page-num="027"] .input.a2 {
+  top: 177px;
+  left: 1337px;
+}
+[page-num="027"] .input.a3 {
+  top: 407px;
+  left: 1656px;
+}
+
+/* 28 */
+[page-num="028"] .content {
+  background: #fff9e2 url(../img/L1_028/bg.png) no-repeat center / 100%;
+}
+[page-num="028"] .input {
+  width: 297px;
+  top: 479px;
+  left: 1577px;
+}
+/* 29 */
+[page-num="029"] .content {
+  background: url(../img/L1_029/bg.png) no-repeat center / 100%;
+}
+[page-num="029"] .input {
+  top: 445px;
+}
+[page-num="029"] .input > span {
+  top: 15px;
+}
+/* 30 */
+[page-num="030"] .content {
+  background: #ffeefe url(../img/L1_030/bg.png) no-repeat center / 100%;
+}
+[page-num="030"] .input.unit {
+  width: 398px;
+  top: 479px;
+  left: 1477px;
+}
+/* 31 */
+[page-num="031"] .content {
+  background: #ffeded url(../img/L1_031/bg.png) no-repeat center / 100%;
+}
+[page-num="031"] .input {
+  top: 349px;
+  left: 239px;
+}
+[page-num="031"] .input.a2 {
+  left: 1296px;
+}
+[page-num="031"] .input.a3 {
+  left: 1561px;
+}
+/* 32 */
+[page-num="032"] .content {
+  background: url(../img/L1_032/bg.png) no-repeat center / 100%;
+}
+[page-num="032"] .answer_wrap.is_btn {
+  top: 61px;
+  left: 221px;
+  align-items: flex-end;
+}
+
+[page-num="032"] .answer_wrap.is_btn .item + .item {
+  margin-left: 210px;
+}
+
+/* 33 */
+[page-num="033"] .content {
+  background: #ebf7ff;
+}
+[page-num="033"] .item {
+  position: absolute;
+  top: 413px;
+  left: 136px;
+}
+[page-num="033"] .item.a2 {
+  top: 63px;
+  left: 598px;
+}
+[page-num="033"] .item.a3 {
+  top: 435px;
+  left: 1181px;
+}
+
+/* 34 */
+[page-num="034"] .content {
+  background: #f9f8f8 url(../img/L1_034/bg.png) no-repeat center / 100%;
+}
+[page-num="034"] .item_wrap {
+  position: absolute;
+  top: 158px;
+  left: 441px;
+}
+[page-num="034"] .item_wrap.d2 {
+  top: 503px;
+  left: 439px;
+}
+[page-num="034"] .item_wrap.d3 {
+  top: 343px;
+  left: 254px;
+}
+[page-num="034"] .item_wrap.d4 {
+  top: 123px;
+  left: 183px;
+}
+[page-num="034"] .item_wrap.d5 {
+  top: 567px;
+  left: 159px;
+}
+[page-num="034"] .drop_wrap {
+  position: absolute;
+  top: 417px;
+  left: 837px;
+  display: flex;
+  align-items: center;
+}
+[page-num="034"] .drop_item {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+[page-num="034"] .drop_item + .drop_item {
+  margin-left: 28px;
+}
+
+/* 35 */
+[page-num="035"] .content {
+  background: #eafcf9 url(../img/L1_035/bg.png) no-repeat center / 100%;
+}
+[page-num="035"] .input {
+  width: 361px;
+  top: 528px;
+  left: 1513px;
+}
+/* 37 */
+[page-num="037"] .content {
+  background: #f9f8f8 url(../img/L1_037/bg.png) no-repeat center / 100%;
+}
+[page-num="037"] .item_wrap {
+  position: absolute;
+  bottom: 190px;
+  left: 1314px;
+}
+[page-num="037"] .item_wrap.d2 {
+  left: 1490px;
+}
+[page-num="037"] .item_wrap.d3 {
+  left: 1666px;
+}
+[page-num="037"] .item_wrap .ans {
+  display: none;
+}
+[page-num="037"] .drag_item.drop {
+  top: unset !important;
+  bottom: -59px !important;
+}
+[page-num="037"] .drag_item.drop .ans {
+  display: block;
+}
+[page-num="037"] .drag_item.drop .on {
+  display: none;
+}
+[page-num="037"] .drop_item {
+  position: absolute;
+  top: 165px;
+  left: 480px;
+}
+[page-num="037"] .drop_item.drop img {
+  opacity: 0;
+}
+/* 38 */
+[page-num="038"] .content {
+  background: #ffeded url(../img/L1_038/bg.png) no-repeat center / 100%;
+}
+[page-num="038"] .input {
+  width: 230px;
+  height: 160px;
+  top: 175px;
+  left: 1679px;
+  border-radius: 50px;
+}
+[page-num="038"] .input > span {
+  font-size: 88px;
+  top: 10px;
+}
+/* 39 */
+[page-num="039"] .content {
+  background: #fff9e2 url(../img/L1_039/bg.png) no-repeat center / 100%;
+}
+[page-num="039"] .input {
+  width: 160px;
+  height: 160px;
+  border-radius: 50px;
+  top: 250px;
+  left: 1584px;
+}
+[page-num="039"] .input.a2 {
+  top: 483px;
+  left: 1584px;
+}
+[page-num="039"] .input span {
+  font-size: 88px;
+}
+/* 40 */
+[page-num="040"] .content {
+  background: #f2fce3 url(../img/L1_040/bg.png) no-repeat center / 100%;
+}
+[page-num="040"] .answer_wrap.is_btn {
+  left: 697px;
+}
+
+/*  */
+/* 36 */
+[page-num="036"] .content {
+  background: #fff4c5 url(../img/L1_036/bg.png) no-repeat center / 100%;
+}
+[page-num="036"] .item_area {
+  position: absolute;
+  top: 598px;
+  left: 495px;
+  display: flex;
+}
+[page-num="036"] .item_wrap {
+  width: 172px;
+  height: 218px;
+}
+[page-num="036"] .item_wrap + .item_wrap {
+  margin-left: 38px;
+}
+[page-num="036"] .drag_item.drop img {
+  width: 134px;
+  height: 168px;
+}
+[page-num="036"] .drop_item {
+  position: absolute;
+  top: 233px;
+  left: 715px;
+  width: 134px;
+  height: 168px;
+  background: url(../img/L1_036/drop.png) no-repeat center / 100%;
+}
+[page-num="036"] .drop_item.drop {
+  background: none;
+}
+
+[page-num="036"] .drop_item + .drop_item {
+  margin-left: 732px;
+}

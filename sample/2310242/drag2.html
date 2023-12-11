@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/L1_09_2_2_167.css" rel="stylesheet" />
+  </head>
+  <style></style>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header lv1">
+            <div class="left">
+              <div class="level">LEVEL1. 봄</div>
+              <div class="topic">데이터와 그래프</div>
+              <div class="cnt">
+                <span class="current">7</span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">동물들을 기준에 따라 분류하려 합니다. 울타리에 표시된 기준에 맞게 동물을 끌어놓아 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area drag" data-name="MultiDropMultiMatchDrag">
+            <div class="answer_wrap" drop-answer="1">
+              <div class="drag_wrap">
+                <div class="item_wrap d1">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj1.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj1_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d2">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj2.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj2_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d7">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj7.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj7_o.png" class="on" />
+                  </div>
+                </div>
+
+                <div class="drop_item" drop-answer="1"></div>
+              </div>
+            </div>
+
+            <div class="answer_wrap" drop-answer="2">
+              <div class="drag_wrap">
+                <div class="item_wrap d3">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj3.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj3_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d4">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj4.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj4_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d5">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj5.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj5_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d6">
+                  <div class="drag_item">
+                    <img src="./img/L1_09_2_2_167/obj6.png" class="off" />
+                    <img src="./img/L1_09_2_2_167/obj6_o.png" class="on" />
+                  </div>
+                </div>
+
+                <div class="drop_item" drop-answer="2"></div>
+              </div>
+            </div>
+
+            <button type="button" class="btn_confirm auto">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      var nextPage = "drag3.html";
+
+      $(".drag_item").on("dragstop", function (event, ui) {
+        if ($(".drag_item.drop").length == 7) {
+          setTimeout(function () {
+            $(".btn_confirm").click();
+          }, 100);
+        }
+      });
+    </script>
+  </body>
+</html>

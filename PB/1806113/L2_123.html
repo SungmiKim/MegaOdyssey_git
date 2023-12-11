@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="123">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">
+              고양이와 쥐가 각각 1번, 7번 타일에서 출발해서 오른쪽 방향으로 움직입니다. 쥐가 타일을 1칸씩 뛸 때, 고양이는 2칸씩 뜁니다. <br />
+              쥐는 몇 번 타일에서 고양이에게 잡힐까요? 알맞은 타일을 눌러 주세요.
+            </div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="click">
+            <div class="answer_wrap is_btn">
+              <div class="item a1"></div>
+              <div class="item a2"></div>
+              <div class="item a3"></div>
+              <div class="item a4"></div>
+              <div class="item a5"></div>
+              <div class="item a6"></div>
+              <div class="item a7"></div>
+              <div class="item a8"></div>
+              <div class="item a9"></div>
+              <div class="item a10"></div>
+              <div class="item a11"></div>
+              <div class="item a12"></div>
+              <div class="item a13 correct"></div>
+              <div class="item a14"></div>
+              <div class="item a15"></div>
+              <div class="item a16"></div>
+              <div class="item a17"></div>
+              <div class="item a18"></div>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

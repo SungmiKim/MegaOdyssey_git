@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="037">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">호랑이 주머니에는 홀수가 적힌 사탕을, 토끼 주머니에는 짝수가 적힌 사탕을 넣으려고 합니다. 각 사탕을 알맞은 주머니 안으로 끌어넣어 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area drag" data-name="MultiDropMultiMatchDrag">
+            <div class="answer_wrap" drop-answer="1">
+              <div class="drag_wrap">
+                <div class="item_wrap d1">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/11.png" class="off" />
+                    <img src="./img/L2_037/11_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d2">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/7.png" class="off" />
+                    <img src="./img/L2_037/7_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d3">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/9.png" class="off" />
+                    <img src="./img/L2_037/9_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d4">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/33.png" class="off" />
+                    <img src="./img/L2_037/33_o.png" class="on" />
+                  </div>
+                </div>
+
+                <div class="drop_item" drop-answer="1"></div>
+              </div>
+            </div>
+
+            <div class="answer_wrap" drop-answer="2">
+              <div class="drag_wrap">
+                <div class="item_wrap d5">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/88.png" class="off" />
+                    <img src="./img/L2_037/88_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d6">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/18.png" class="off" />
+                    <img src="./img/L2_037/18_o.png" class="on" />
+                  </div>
+                </div>
+                <div class="item_wrap d7">
+                  <div class="drag_item">
+                    <img src="./img/L2_037/8.png" class="off" />
+                    <img src="./img/L2_037/8_o.png" class="on" />
+                  </div>
+                </div>
+
+                <div class="drop_item" drop-answer="2"></div>
+              </div>
+            </div>
+
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

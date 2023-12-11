@@ -1,0 +1,28 @@
+.content {
+  background: #ffeefe url(../img/L1_05_3_1_091/bg.png) no-repeat center / 100%;
+}
+
+.line_wrap {
+  top: 100px;
+  left: 500px;
+  width: 1009px;
+  height: 700px;
+}
+
+.dot {
+  top: 46px;
+  left: 10px;
+}
+.dot.right {
+  left: 950px;
+}
+
+.dot.d2,
+.dot.d5 {
+  top: 321px;
+}
+
+.dot.d3,
+.dot.d6 {
+  top: 593px;
+}

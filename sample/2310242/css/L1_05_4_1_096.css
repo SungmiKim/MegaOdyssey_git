@@ -1,0 +1,51 @@
+.content {
+  background: #fff9e2 url(../img/L1_05_4_1_096/bg.png) no-repeat center / 100%;
+}
+
+.item_wrap {
+  position: absolute;
+  top: 59px;
+  left: 87px;
+  width: 420px;
+  height: 357px;
+  background: url(../img/L1_05_4_1_096/bubble.png) no-repeat center / 100%;
+  padding: 42px 0px 0 110px;
+  box-sizing: border-box;
+}
+
+.item_wrap.d2 {
+  left: 1267px;
+  padding: 52px 0px 0 110px;
+}
+.item_wrap.d3,
+.item_wrap.d4 {
+  top: 470px;
+  left: 136px;
+}
+.item_wrap.d3 {
+  padding: 48px 0px 0 104px;
+}
+.item_wrap.d4 {
+  left: 1217px;
+  padding: 58px 0px 0 104px;
+}
+.drop_item {
+  position: absolute;
+  top: 264px;
+  left: 579px;
+  width: 206px;
+  height: 237px;
+}
+.drop_item.ui-droppable-hover {
+  transform-origin: 0% 100%;
+  transform: scale(1.05);
+}
+.drop_item::before {
+  content: "";
+  background: url(../img/L1_05_4_1_096/drop1.png) no-repeat center / 100%;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,47 @@
+<!-- ***************************
+            클릭하기
+**************************** -->
+<div class="quiz_area" data-name="click">
+  <!-- 숫자 클릭의 경우 : num -->
+  <!-- 클릭 요소가 일렬로 들어갈 경우 : is_btn -->
+  <div class="answer_wrap num">
+    <div class="item a1"></div>
+    <div class="item a2"></div>
+    <div class="item a3"></div>
+    <div class="item a4 correct"></div>
+    <div class="item a5"></div>
+  </div>
+  <button type="button" class="btn_confirm">정답 확인</button>
+</div>
+
+<!-- ***************************
+          키패드(1개)
+**************************** -->
+<div class="quiz_area" data-name="keypad">
+  <div class="answer_wrap" data-answer="6">
+    <!-- input -->
+    <!-- 단위가 있는 경우 : unit  -->
+    <div class="input unit keyup"><span></span><em>개</em></div>
+    <div class="input keyup"><span></span></div>
+
+    <!-- 키패드 -->
+    <div class="keyboard">
+      <ul class="key_num">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+      </ul>
+      <ul class="key_tool">
+        <li class="delete">지우기</li>
+        <li class="btn_check">정답확인</li>
+      </ul>
+    </div>
+  </div>
+</div>

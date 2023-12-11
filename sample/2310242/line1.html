@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/L1_05_3_1_091.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header lv1">
+            <div class="left">
+              <div class="level">LEVEL1. 봄</div>
+              <div class="topic">평면도형</div>
+              <div class="cnt">
+                <span class="current">11</span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">왼쪽 모양과 오른쪽 모양이 서로 같은 것끼리 선으로 이어 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area line" data-name="singleLine">
+            <!-- 선긋기 유형 // oneWayLine -->
+            <div class="answer_wrap" data-answer="213">
+              <div class="draw_area">
+                <div class="line_wrap">
+                  <svg>
+                    <line x1="0" y1="0" x2="0" y2="0" stroke-dashoffset="0" class="line1"></line>
+                    <line x1="0" y1="0" x2="0" y2="0" stroke-dashoffset="0" class="line2"></line>
+                    <line x1="0" y1="0" x2="0" y2="0" stroke-dashoffset="0" class="line3"></line>
+                  </svg>
+                  <div class="dot_list">
+                    <div class="dot d1 left" data-answer="1"><span class="drag"></span></div>
+                    <div class="dot d2 left" data-answer="2"><span class="drag"></span></div>
+                    <div class="dot d3 left" data-answer="3"><span class="drag"></span></div>
+                    <div class="dot d4 right"><span class="drop"></span></div>
+                    <div class="dot d5 right"><span class="drop"></span></div>
+                    <div class="dot d6 right"><span class="drop"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn_confirm auto">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      var nextPage = "line2.html";
+
+      $(".dot .drag").on("dragstop", function (event, ui) {
+        if ($("svg line.on").length == 3) {
+          setTimeout(function () {
+            $(".btn_confirm").click();
+          }, 100);
+        }
+      });
+    </script>
+  </body>
+</html>

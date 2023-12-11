@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" page-num="036">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header">
+            <div class="left">
+              <div class="level"></div>
+              <div class="topic"></div>
+              <div class="cnt">
+                <span class="current"></span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">홀수를 모두 찾아 눌러 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="click">
+            <div class="answer_wrap multi" data-answer="1//2//4//5//7//10//13//14">
+              <div class="item a1">
+                <img src="./img/L2_036/1.png" class="off" />
+                <img src="./img/L2_036/1_o.png" class="on" />
+              </div>
+              <div class="item a2">
+                <img src="./img/L2_036/5.png" class="off" />
+                <img src="./img/L2_036/5_o.png" class="on" />
+              </div>
+              <div class="item a3">
+                <img src="./img/L2_036/8.png" class="off" />
+                <img src="./img/L2_036/8_o.png" class="on" />
+              </div>
+              <div class="item a4">
+                <img src="./img/L2_036/13.png" class="off" />
+                <img src="./img/L2_036/13_o.png" class="on" />
+              </div>
+              <div class="item a5">
+                <img src="./img/L2_036/17.png" class="off" />
+                <img src="./img/L2_036/17_o.png" class="on" />
+              </div>
+              <div class="item a6">
+                <img src="./img/L2_036/32.png" class="off" />
+                <img src="./img/L2_036/32_o.png" class="on" />
+              </div>
+              <div class="item a7">
+                <img src="./img/L2_036/33.png" class="off" />
+                <img src="./img/L2_036/33_o.png" class="on" />
+              </div>
+              <div class="item a8">
+                <img src="./img/L2_036/44.png" class="off" />
+                <img src="./img/L2_036/44_o.png" class="on" />
+              </div>
+              <div class="item a9">
+                <img src="./img/L2_036/48.png" class="off" />
+                <img src="./img/L2_036/48_o.png" class="on" />
+              </div>
+              <div class="item a10">
+                <img src="./img/L2_036/55.png" class="off" />
+                <img src="./img/L2_036/55_o.png" class="on" />
+              </div>
+              <div class="item a11">
+                <img src="./img/L2_036/76.png" class="off" />
+                <img src="./img/L2_036/76_o.png" class="on" />
+              </div>
+              <div class="item a12">
+                <img src="./img/L2_036/88.png" class="off" />
+                <img src="./img/L2_036/88_o.png" class="on" />
+              </div>
+              <div class="item a13">
+                <img src="./img/L2_036/99.png" class="off" />
+                <img src="./img/L2_036/99_o.png" class="on" />
+              </div>
+              <div class="item a14">
+                <img src="./img/L2_036/105.png" class="off" />
+                <img src="./img/L2_036/105_o.png" class="on" />
+              </div>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="./pageInfo.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+  </body>
+</html>

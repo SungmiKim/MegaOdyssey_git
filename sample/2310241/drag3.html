@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>사자수학 오디세이</title>
+    <!--공통 -->
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <link href="../common/css/quiz.css" rel="stylesheet" />
+    <link href="./css/L1_06_4_4_119.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <div class="fixed top">
+          <!-- 봄 : lv1, 여름 : lv2, 가을 : lv3, 겨울 : lv4 -->
+          <header class="header lv1">
+            <div class="left">
+              <div class="level">LEVEL1. 봄</div>
+              <div class="topic">입체도형</div>
+              <div class="cnt">
+                <span class="current">16</span>
+                &#47;<span class="total">20</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="btn btn_close" onclick="PageEvent.openPop('exit')"></div>
+            </div>
+          </header>
+        </div>
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <!-- 가변 컨텐츠 -->
+        <div class="content">
+          <div class="tit_wrap">
+            <div class="page_tit">여덟 개의 똑같은 쌓기나무를 붙여서 그림과 같은 입체 모형을 만들었습니다. 이 입체 모형을 화살표 방향에서 바라보면 어떤 모습일까요? 사각형 격자 안에 정사각형 모양을 하나씩 끌어넣어 완성해 주세요.</div>
+            <div class="btn_retry"></div>
+          </div>
+          <!-- [ 퀴즈 ] -->
+          <div class="quiz_area" data-name="multiDropVaryMatch">
+            <!-- 드래그 유형 // multiDropVaryMatch -->
+            <div class="answer_wrap" data-answer="3//5//6//7//9//11//12">
+              <div class="drag_wrap">
+                <div class="item_wrap d1">
+                  <div class="drag_item" data-answer="1"></div>
+                </div>
+                <div class="item_wrap d2">
+                  <div class="drag_item" data-answer="2"></div>
+                </div>
+                <div class="item_wrap d3">
+                  <div class="drag_item" data-answer="3"></div>
+                </div>
+                <div class="item_wrap d4">
+                  <div class="drag_item" data-answer="4"></div>
+                </div>
+                <div class="item_wrap d5">
+                  <div class="drag_item" data-answer="5"></div>
+                </div>
+                <div class="item_wrap d6">
+                  <div class="drag_item" data-answer="6"></div>
+                </div>
+                <div class="item_wrap d7">
+                  <div class="drag_item" data-answer="7"></div>
+                </div>
+
+                <div class="drop_wrap">
+                  <div class="box">
+                    <div class="drop_item d1"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d2"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d3"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d4"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d5"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d6"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d7"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d8"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d9"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d10"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d11"></div>
+                  </div>
+                  <div class="box">
+                    <div class="drop_item d12"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn_confirm">정답 확인</button>
+          </div>
+        </div>
+        <!-- 가변 컨텐츠 End -->
+      </div>
+      <div class="pop_area"></div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/jquery-ui.js"></script>
+    <script src="../common/js/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      var nextPage = "line1.html";
+
+      $(".drag_item").on("dragstart", function (event, ui) {
+        var idx = $(this).attr("data-answer");
+        $(`.drop_item[data-answer='${idx}']`).removeClass("drop");
+      });
+    </script>
+  </body>
+</html>

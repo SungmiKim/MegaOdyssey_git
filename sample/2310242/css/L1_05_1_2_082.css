@@ -1,0 +1,28 @@
+.content {
+  background: #f6effd;
+}
+
+[data-name="click"] .item {
+  position: absolute;
+}
+
+.item.a1 {
+  top: 501px;
+  left: 1155px;
+}
+.item.a2 {
+  top: 509px;
+  left: 409px;
+}
+.item.a3 {
+  top: 123px;
+  left: 1423px;
+}
+.item.a4 {
+  top: 44px;
+  left: 781px;
+}
+.item.a5 {
+  top: 162px;
+  left: 133px;
+}
